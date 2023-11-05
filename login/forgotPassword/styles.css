@@ -1,0 +1,225 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&amp;display=swap");
+
+/*===== css variables =====*/
+:root{
+  /*===== Colores =====*/
+  --first-color: #9D4BFF;
+  --first-color-dark: #151c23;
+  --first-color-light: #A49EAC;
+  --first-color-lighten: #F2F2F2;
+
+  /*===== Font & styles =====*/
+  --body-font:"Poppins", sans-serif;;
+  --h1-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+}
+
+@media screen and (min-width: 768px){
+  :root{
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*===== base -- to apply setting to all =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color-dark);
+  background-color: #23004D;
+background-image: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%);;
+}
+
+h1{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*===== login =====*/
+.login{
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+ 
+}
+
+.login__content{
+  display: grid;
+}
+
+.login__img{
+  justify-self: center;
+  background-color:  var(--first-color-lighten);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 77%);
+}
+
+.login__img img{
+  width: 310px;
+  margin-top: 1.5rem;
+  
+}
+
+.login__forms{
+  position: relative;
+  height: 368px;
+}
+
+.login__registre{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  background-color: var(--first-color-lighten);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35,0,77,.2);
+  animation-duration: .4s;
+  animation-name: animate-login;
+}
+
+@keyframes animate-login{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1,1.1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+.login__title{
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.login__box{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: .5rem;
+  padding: 1.125rem 1rem;
+  background-color: #FFF;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border: 1px solid transparent;
+  
+
+}
+.login__box:hover{
+  border:1px solid var(--first-color);
+  transition: 0.4s;
+}
+
+.login__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.login__input{
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+  color: var(--first-color-dark);
+}
+
+.login__para{
+  justify-self:center;
+  width: max-content;
+  margin-left: auto;
+  margin-top: .5rem;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  color: var(--first-color-light);
+}
+
+.login__button{
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: var(--first-color);
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+  border-radius: .5rem;
+  transition: .3s;
+  border: none;
+  width: 100%;
+}
+
+.login__button:hover{
+  background-color: var(--first-color-dark);
+}
+
+
+/* -MEDIA QUERIES -*/
+@media screen and (min-width: 576px){
+  .login__forms{
+    width: 348px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width:1020px){.login__img{
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+}
+@media screen and (min-width: 860px){
+  .login{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .login__content{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+  }
+
+  .login__img{
+    display: flex;
+    width: 600px;
+    height: 588px;
+    background-color: var(--first-color-lighten);
+  box-shadow: 0 8px 32px 0 rgb(158, 158, 158);
+ backdrop-filter:blur(10px);
+    border-radius: 1rem;
+    padding-left: 1rem;
+  }
+
+  .login__img img{
+    width: 390px;
+    margin-top: 0;
+  }
+
+  .login__registre{
+    left: -11rem;
+  }
+
+  .login__registre{
+    bottom: -2rem;
+  }
+}
