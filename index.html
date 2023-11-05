@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSIT Cultural Fest </title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KTXQFHE76"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-8KTXQFHE76');
+  </script>
+ 
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="home/assets/images/img/fav-psit.jpg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+
+  <link rel="stylesheet" href="home/assets/css/style.css">
+  <link rel="stylesheet" href="home/assets/css/MeetTeam.css">
+  <link rel="stylesheet" href="home/assets/css/CA_main.css">
+  <link rel="stylesheet" href="home/AOS/AOS.css">
+  <script src="home/AOS/AOS.js"></script>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&amp;family=Rubik:wght@400;500;800&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @media (max-width: 400px){
+    #vd_head{
+      font-size: large;
+    }}
+    @font-face {
+      font-family: 'MyFont';
+      src: url('home/assets/AlphaWizard.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #loading {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      /* background: #1d1f39 ; */
+      background: #000000 url('home/loader/ezgif.html\ \(1\).gif') no-repeat center;
+      z-index: 99999;
+    }
+
+
+
+    #verse-ignitia {
+      
+      font-family: alphaW;
+      letter-spacing: 5px;
+
+    }
+
+    @keyframes neon {
+      0% {
+        text-shadow:
+          0 0 6px rgba(202, 228, 225, 0.92),
+          0 0 30px rgba(202, 228, 225, 0.34),
+          0 0 12px rgba(30, 132, 242, 0.52),
+          0 0 21px rgba(30, 132, 242, 0.92),
+          0 0 34px rgba(30, 132, 242, 0.78),
+          0 0 54px rgba(30, 132, 242, 0.92);
+      }
+
+      50% {
+        text-shadow:
+          0 0 6px rgba(202, 228, 225, 0.98),
+          0 0 30px rgba(202, 228, 225, 0.42),
+          0 0 12px rgba(30, 132, 242, 0.58),
+          0 0 22px rgba(30, 132, 242, 0.84),
+          0 0 38px rgba(30, 132, 242, 0.88),
+          0 0 60px rgba(30, 132, 242, 1);
+      }
+
+    }
+  </style>
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="home/assets/images/hero-banner.html">
+  <link rel="preload" as="image" href="home/assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="home/assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="home/assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="home/assets/images/calories.svg">
+
+</head>
+
+<body id="top" onload="loadfun()">
+  <!-- Loader -->
+  <div id="loading">
+    
+  </div>
+   <!-- Loader end-->
+
+
+  <!-- 
+    - #HEADER
+  -->
+  <div style="z-index: 1000000000;">
+    
+      </div>
+
+  <header class="header" data-header>
+    <div class="container_bg">
+
+      <a href="#" class="logo">
+        <img src="home/assets/images/img/ignitia_logo.png" style="height: 40px; width:50px">
+
+        <span id="aarohiFont" class="span">Ignitia</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="sponsors/index.html" class="navbar-link" data-nav-link>Sponsors</a>
+          </li>
+
+          <li>
+            <a href="proshows.html" class="navbar-link" data-nav-link>Leaderboard</a>
+          </li>
+
+          <li>
+            <a href="event.html" class="navbar-link" data-nav-link>Erp</a>
+          </li>
+
+          <li>
+            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+          </li>
+
+          <li>
+            <a href="events.html" class="navbar-link" data-nav-link>Events</a>
+          </li>
+
+          <li>
+            <a href="gallery/index.html" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+        </ul>
+
+      </nav>
+
+
+      
+                <a href="auth.html" class="btn btn-secondary">Login</a>
+                
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+
+      
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('home/drstrange.gif'); background-blend-mode: overlay;">
+
+        <div class="container_bg">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">Cultural Festival</strong>PSIT KANPUR
+            </p>
+
+            <h1 id="aarohiFont" class="h1 hero-title">Ignitia </h1>
+            <h1 id="verse-ignitia" class="h1 hero-title">WELCOME TO PSIT</h1>
+
+            <p class="section-text">
+              Step into the Magicverse and let your imagination take flight! Embrace the enchantment, summon your inner wizard, and dive into a world where spells come to life. For in the Magicverse, the only limit is the scope of your dreams
+            </p>
+
+            <a href="event.html" class="btn btn-primary" style="cursor: pointer;">Go Register</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="home/bg_char_hero.png" id="hero-hbg" style="margin-left: 10px;" width="500"
+              height="500" alt="hero banner" class="w-50">
+
+
+            <img src="home/assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="home/assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <!-- <img src="/home/assets/images/calories.svg" width="348" height="224" alt="calories" class="cal-img cal-img-2"> -->
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container_bg">
+
+
+          <div data-aos="zoom-in" class="about-banner has-after">
+            <img src="home/assets/images/analytics_charts.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="home/assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="home/assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            
+          </div>
+
+          <div data-aos="zoom-in" class="about-content">
+
+            <p class="section-subtitle" href="#">About Us</p>
+
+            <h2 class="h2 section-title"
+              style="color:white;font-family:MyFont;  animation: ;">Into The Magicverse
+            </h2>
+
+            <p class="section-text">
+              The institute prepares students to be ethical leaders in a diverse and complex world. 
+              PSIT offers various courses in Engineering, Business Management and Computer Applications. All departments,
+               with their dynamic community of students and distinguished faculty, offer premium undergraduate and postgraduate programs. </p>
+
+            <p class="section-text">
+              The institute prepares students to be ethical leaders in a diverse and complex world. 
+              PSIT offers various courses in Engineering, Business Management and Computer Applications. 
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-ignitia">
+
+                <figure class="ignitia-avatar">
+                  <img src="home/assets/images/img/fav-psit.jpg" width="65" height="65" loading="lazy" alt="">
+                </figure>
+
+                <div>
+                  <h3 class="">PSIT'24</h3>
+
+                  <p class="ignitia-title">PSIT KANPUR</p>
+                </div>
+
+              </div>
+
+              <a class="btn btn-primary" href="about.html">Explore More</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+     
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class">
+        <div class="container_bg">
+
+          <p class="section-subtitle">Pro-Shows</p>
+
+          <h2 class="h2 section-title text-center">Our Past Years Attractions</h2>
+
+          <ul class="class-list has-scrollbar">
+
+           
+
+            <li class="scrollbar-item" data-aos="zoom-in" data-aos-duration="500">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="home/assets/images/img/sachetParampara-min.jpg" width="416" height="240" loading="lazy"
+                    alt=" " class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="home/assets/images/img/controller.jpg" style="width:52px; height:52px" width="52" height="52"
+                      aria-hidden="true" alt="" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="proshows.html" class="card-title">Musical Concert!</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    "Social institution for the public performance of music outside of a religious or dramatic context"
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Participation</p>
+
+                      <span class="progress-value">98%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 98%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+             <li class="scrollbar-item" data-aos="zoom-in" data-aos-duration="500" >
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="home/assets/images/img/akashgupta-min.jpg" width="416" height="240" loading="lazy"
+                    alt=" " class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="home/assets/images/img/controller.jpg" style="width:52px; height:52px" width="52" height="52"
+                      aria-hidden="true" alt="" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="proshows.html" class="card-title">Stand-up comedy!</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                   
+A dramatic work in which the central motif is the triumph over adverse circumstance, resulting in a successful or happy conclusion.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Participation</p>
+
+                      <span class="progress-value">95%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 95%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="zoom-in" data-aos-duration="500">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="home/assets/images/img/proshow1-min.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="home/assets/images/img/controller.jpg" style="width:52px; height:52px" width="52" height="52"
+                      aria-hidden="true" alt="" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="proshows.html" class="card-title">Harshit Saxena</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    With superlative performances by the crème de la crème of the profession, combined with 90000 watts of adrenaline pumping music thundering atmosphere.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Participation</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="zoom-in" data-aos-duration="500">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="home/assets/images/img/proshow2-min.jpg" width="416" height="240" loading="lazy"
+                    alt="proshow_img" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="home/assets/images/img/controller.jpg" style="width:52px; height:52px" width="52" height="52"
+                      aria-hidden="true" alt="" class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="proshows.html" class="card-title">Social Innovation</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    An extremely exhilarating night is in store for you. “Live for today, plan for tomorrow, party tonight.”
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Participation</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG/EVENTS
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container_bg">
+
+          <p class="section-subtitle">Our Events</p>
+
+          <h2 class="h2 section-title text-center">Latest Events Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item" data-aos="flip-up" data-aos-duration="500">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="home/assets/images/img/event1-min.jpg" width="440" height="270" loading="lazy"
+                    alt=" " class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">1 Nov 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h2 class="h3">
+                    <a href="#" class="card-title">CELEBRITY VISIT</a>
+                  </h2>
+
+                  <p class="card-text">
+                    Outer beauty attracts but inner beauty captivates, and instigates a change in society. Here's your opportunity to make it to the further rounds of IIT Bombay's MOOD INDIGO!!
+                  </p>
+
+                  <a href="event.html" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="flip-up" data-aos-duration="500">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="home/assets/images/img/event2-min.jpg" width="440" height="270" loading="lazy"
+                    alt=" " class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">31 Oct 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h2 class="h3">
+                    <a href="#" class="card-title">HARSHIT SAXENA</a>
+                  </h2>
+
+                  <p class="card-text">
+                    Wrap your fingers around a set of these strings and let them wrap your mind around the creativity that is within you.
+                    So, get ready to show your talent!                     
+                  </p>
+
+                  <a href="event.html" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="flip-up" data-aos-duration="500">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="home/assets/images/img/event3-min.jpg" width="440" height="270" loading="lazy"
+                    alt=" " class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">26 Oct 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h2 class="h3">
+                    <a href="#" class="card-title">Sushant Singh Rajput</a>
+                  </h2>
+
+                  <p class="card-text">
+                    
+A dramatic work in which the central motif is the triumph over adverse circumstance, resulting in a successful or happy conclusion.
+
+                  </p>
+
+                  <a href="event.html" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- CA -->
+
+      <section class="section about" id="about" aria-label="about">
+      
+        <div class="container_bg">
+
+
+          <div data-aos="zoom-in" class="about-banner has-after">
+            <img src="home/assets/images/girlsitting.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+          </div>
+
+          <div data-aos="zoom-in" class="about-content">
+
+            <p class="section-subtitle" href="#">Events</p>
+
+            <h2 class="h2 section-title"
+              style="color:white;font-family:MyFont;  animation: ;">Join in Events
+            </h2>
+
+            <p class="section-text">
+              The institute prepares students to be ethical leaders in a diverse and complex world. 
+              PSIT offers various courses in Engineering, Business Management and Computer Applications.  </p>
+
+           
+
+            <div class="wrapper">
+
+              <a class="btn btn-primary" href="events.html">Join Now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+     
+ 
+
+<section id="team" class="app" aria-label="app">
+        <div class="container">
+
+          <div class="app-card bg-gray">
+
+            <div data-aos="zoom-in" class="card-content">
+
+              <h2 class="h2 section-title">Meet the Team</h2>
+
+              <p class="section-text" >
+                We're excited to introduce you to our team, click here to see who we are .
+              </p>
+
+              <div  class="tbtn-group">
+
+                <a href="webteam.html" class="tbtn tbtn-primary">
+                  <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+
+                  <div>
+                    <p class="tbtn-text">Our Devlopers</p>
+
+                    <p class="tbtn-title">Webteam</p>
+                  </div>
+                </a>
+
+                <a href="contact/index.html" class="tbtn tbtn-primary">
+                  <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                  <div>
+                    <p class="tbtn-text">Our Organizers </p>
+
+                    <p class="tbtn-title">Core Team</p>
+                  </div>
+                </a>
+
+              </div>
+
+            </div>
+
+            <figure data-aos="zoom-in" class="card-banner">
+              <img  src="home/assets/images/team.png"  loading="lazy"
+                alt="team banner" class="w-100 bnnn">
+            </figure>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image">
+      <div class="container_bg">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="home/assets/images/img/ignitia_logo.png" style="height: 40px; width:50px">
+
+
+            <span class="span" style="font-family:aarohiFont;">Ignitia</span>
+          </a>
+
+          <p class="footer-brand-text">
+            Central India's Largest Cultural Festival.
+          </p>
+
+          <div class="wrapper">
+
+            <img src="home/assets/images/footer-clock1.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00AM - 10:00PM</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00AM - 8:00PM</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="event.html" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="proshows.html" class="footer-link">ProShows</a>
+          </li>
+
+          <li>
+            <a href="gallery/index.html" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="footer-link">About Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              Pranveer Singh Institute of Technology, NH 19, Kanpur, Bhautipratappur, Uttar Pradesh 209305
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+910000000" class="footer-link">+91-123456789</a>
+
+              <a href="tel:+910000000000" class="footer-link">+91-1234567788</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+           
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Stay Connected</p>
+          </li>
+
+          <li>
+            <form action="#" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/psit" target="_blank" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/psit" target="_blank" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container_bg">
+
+        <p class="copyright">
+          &copy; PSIT 2023 . Made By <a href="webteam.html" class="copyright-link">ROYAL-CODERS[PSIT]</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="privacy.html" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="terms.html" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    var load = document.getElementById("loading");
+    function loadfun() {
+      load.style.display = "none";
+      document.getElementById('close').onclick = function () {
+        this.parentNode.parentNode.parentNode
+          .removeChild(this.parentNode.parentNode);
+        return false;
+      };
+    }
+  </script>
+  <!-- theme vdo script -->
+      <script>
+       const playBtn=  document.querySelector('.play-btn')
+       playBtn.addEventListener('click',()=> {
+        document.querySelector('.video').style.d
+       })
+      </script>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="home/assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="../unpkg.com/ionicons%405.5.2/dist/ionicons/ionicons.js"></script>
+   <script>
+    AOS.init();
+
+
+// below listed default settings
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+
+
+
+</body>
+
+
+</html>
