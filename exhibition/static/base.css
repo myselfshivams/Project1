@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    
+    
+}
+
+::selection {
+    background: #101218;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #101218;
+    /* Gecko Browsers */
+}
+
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* Change Autocomplete styles in Chrome*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1em white inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#sound-icon {
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    padding: 0.5em;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 1em black;
+    display: none;
+    z-index: 1000;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* .orientation-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.orientation-message h1 {
+    font-size: 1.5em;
+    line-height: 1.0;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: black;
+} */
+
+#preloader .text {
+    font-size: 3em;
+    background: linear-gradient(135deg, violet, purple, orange, red);
+    background-size: 200% 200%;
+    animation: gradient-bg-moving 2s ease-in-out infinite;
+    color: transparent;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#preloader .click-indicator {
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradient-bg-moving {
+    from {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    to {
+        background-position: 0% 0%;
+    }
+}
+
+
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 100;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    font-family: 'Roboto';
+    background-color: #161821;
+    /* Black fallback color */
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.3s
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b3bfd6;
+    display: block;
+    transition: 0.3s;
+}
+
+.slide-left {
+    animation: fadeInLeft 1s linear;
+}
+
+.slide-right {
+    animation: fadeInRight 1s linear;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    text-shadow: 0 0 5px hsl(219, 30%, 85%);;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.topnav {
+    position: fixed;
+    top: 1em;
+    width: 80vw;
+    margin: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-radius: 6px;
+    background-color: hsla(320, 88%, 34%, 0.25);
+    box-shadow: 0 0 0.5em hsla(320, 95%, 54%, 1.0);
+    transition-duration: 250ms;
+}
+
+.topnav:hover {
+    background-color: hsla(340, 100%, 85%, 0.5);
+    box-shadow: 0 0 1me hsla(320, 95%, 54%, 1.0);
+    outline: 2px solid hotpink;
+}
+
+.topnav img {
+    max-height: 5vh;
+    padding: 1em;
+}
+
+.topnav button {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    padding: 0.5em 2.5ch;
+    transition: background 200ms ease-in-out;
+}
+
+.topnav button:hover {
+    background: wheat;
+    color: black;
+}
+
+.topnav .left-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav .right-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topnav a,
+.topnav a:visited {
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2.5ch;
+    border-radius: 6px;
+    transition-duration: 300ms;
+}
+
+.topnav a:hover {
+    color: black;
+    background-color: greenyellow;
+    text-shadow: 0 0 0.125em white;
+}
+
+.right-half * {
+    margin: 0 0;
+}
+
+@media (max-width: 720px) {
+    .topnav {
+        position: absolute;
+        top: 1em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .topnav .right-half {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1em;
+    width: 80vw;
+    border-radius: 2em;
+    margin: 10vh auto;
+    background-color: hsla(297.8, 96.4%, 11%, 0.5);
+}
+
+.logo {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    filter: invert(1.0);
+    height: 10vh;
+}
+
+.contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 5px white;
+}
+
+a:visited {
+    color: white;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.link i {
+    padding: 1em;
+    border-radius: 1em;
+    transition-duration: 200ms;
+    font-size: 1.5em;
+}
+
+.sitemap-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sitemap-links a,
+.sitemap-links a:visited {
+    padding: 0.5em 10ch 0.5em 5ch;
+    margin-left: 1ch;
+    margin-right: 1ch;
+    height: fit-content;
+    border-radius: 1em;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,176,69,1) 100%);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    transition-duration: 250ms;
+    color: white;
+    text-align: left;
+}
+
+.sitemap-links a:hover {
+    background-position: 100% 100%;
+    box-shadow: 0 0 5px hsl(40, 95%, 55%);
+}
+
+.socmed-link {
+    color: white;
+}
+
+.socmed-link:hover {
+    text-shadow: 0 0 0.25em gold;
+}
+
+.socmed-link:visited {
+    color: hsl(180, 95%, 100%);
+    text-shadow: 0 0 0.5em white;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .footer .sitemap-links a {
+        margin: 0 10vw;
+        width: 100%;
+    }
+}
+
+
+/*
+
+::-webkit-scrollbar {
+    width: 12px;
+    background: rgb(49, 2, 63);
+    border: 2px solid rgb(80, 18, 99);
+}
+
+::-webkit-scrollbar-thumb {
+    
+    width: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(181, 16, 231);
+    background: #291239;
+}
+
+*/
