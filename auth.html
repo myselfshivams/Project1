@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KTXQFHE76"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KTXQFHE76');
+</script>
+  <title>Register IGNITIA'24</title>
+  <link rel="shortcut icon" href="home/assets/images/img/fav-psit.jpg" type="image/svg+xml" />
+  <link rel="stylesheet" href="login/style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form id="login" method="post" action="https://www.erp.psit.ac.in" autocomplete="off" class="sign-in-form">
+            <div class="logo">
+              <img src="home/assets/images/img/ignitia_logo.png" alt="PSIT2022" />
+              <h4 id="aarohiFont">Ignitia</h4>
+            </div>
+            <div class="heading">
+              <h2>Welcome Back</h2>
+              <h6>Not registred yet?</h6>
+              <a href="#register" class="toggle">Sign up</a>
+            </div>
+            
+                      <div class="actual-form">
+                        <div class="input-wrap">
+                          <input name="email" type="text" minlength="4" class="input-field" autocomplete="off"
+                            required />
+                          <label>Email</label>
+                        </div>
+
+                        <div class="input-wrap">
+                          <input name="password" type="password" minlength="4" class="input-field" autocomplete="off"
+                            required />
+                          <label>Password</label>
+                        </div>
+
+                        <input type="submit" value="Sign In" class="sign-btn" />
+                   
+
+                        <p class="text">
+                          Forgotten your password ?
+                          <a href="auth/forgotPassword.html">Get help</a> signing in
+                        </p>
+                      </div>
+          </form>
+
+          <form id="register" method="post" action="https://www.erp.psit.ac.in/" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="home/assets/images/img/ignitia_logo.png" alt="PSIT2022" />
+              <h4 id="aarohiFont">Ignitia</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Get Started</h2>
+              <h6>Already have an account?</h6>
+              <a href="#login" class="toggle">Sign in</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input name="name" type="text" minlength="4" class="input-field" autocomplete="off" required />
+                <label>Name</label>
+              </div>
+
+              <div class="input-wrap">
+                <input name="email" type="email" class="input-field" autocomplete="off" required />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input name="password" type="password" pattern=".{8,12}" required title="8 to 12 characters"
+                  class="input-field" autocomplete="off" required />
+                <label>Password</label>
+              </div>
+
+              <input type="submit" value="Sign Up" class="sign-btn" />
+              <a class="google-btn" href=NULL>
+                <button type="button" class="login-with-google-btn">
+                  Sign up with Google
+                </button>
+              </a>
+              <p class="text">
+                Ready for the thrill ? Click on
+                <a href="#"> Sign-Up </a>Now
+              </p>
+
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="login/img/giphy56.gif" class="image img-1 show" alt="" />
+           
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Enter Into Gameverse</h2>
+                
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Javascript file -->
+
+  <script src="login/app.js"></script>
+  <script>
+    window.onload = function () {
+      document.getElementById('close').onclick = function () {
+        this.parentNode.parentNode.parentNode
+          .removeChild(this.parentNode.parentNode);
+        return false;
+      };
+    };
+  </script>
+</body>
+
+</html>
