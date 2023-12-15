@@ -4,9 +4,7 @@
   font-family: aarohiFont;
   src:url("AnandaBlackPersonalUseRegular-rg9Rx.ttf");
 }
-#aarohiFont{
-  font-family: aarohiFont;
-}
+
 
 *,
 *::before,
@@ -26,7 +24,7 @@ main {
   min-height: 100vh;
   overflow: hidden;
   /* background-color: #290A66; */
-  background: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%);
+  background: linear-gradient(45deg, #FFBE3D 0%, #F06543 100%);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -38,7 +36,7 @@ main {
 }
 
 .login-with-google-btn {
-  border: 2px solid #9D4BFF ;
+  border: 2px solid #ebbb10 ;
   width: 100%;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 12px 16px 12px 42px;
@@ -121,7 +119,8 @@ form.sign-up-form {
 }
 
 .logo img {
-  width: 50px;
+  width: 250px;
+  height: auto;
   margin-right: 0.3rem;
 }
 
@@ -146,7 +145,7 @@ form.sign-up-form {
 }
 
 .toggle {
-  color: #9D4BFF;
+  color: #c3922e;
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 500;
@@ -154,7 +153,7 @@ form.sign-up-form {
 }
 
 .toggle:hover {
-  color: #8371fd;
+  color: #fb970b;
 }
 
 .input-wrap {
@@ -202,7 +201,7 @@ label {
   display: inline-block;
   width: 100%;
   height: 43px;
-  background-color: #9D4BFF;
+  background-color: #c3922e;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -213,7 +212,7 @@ label {
 }
 
 .sign-btn:hover {
-  background-color: #2f0266;
+  background-color: #ebbb10;
 }
 
 .text {
@@ -222,12 +221,12 @@ label {
 }
 
 .text a {
-  color: #9D4BFF;
+  color: #c4942b;
   transition: 0.3s;
 }
 
 .text a:hover {
-  color: #8371fd;
+  color: #ebbb10;
 }
 
 main.sign-up-mode form.sign-in-form {
