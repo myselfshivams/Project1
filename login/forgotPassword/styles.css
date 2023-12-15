@@ -4,9 +4,9 @@
 /*===== css variables =====*/
 :root{
   /*===== Colores =====*/
-  --first-color: #9D4BFF;
-  --first-color-dark: #151c23;
-  --first-color-light: #A49EAC;
+  --first-color: #ebbb10;
+  --first-color-dark: #c4942b;
+  --first-color-light: #d9b559;
   --first-color-lighten: #F2F2F2;
 
   /*===== Font & styles =====*/
@@ -35,7 +35,7 @@ body{
   font-size: var(--normal-font-size);
   color: var(--first-color-dark);
   background-color: #23004D;
-background-image: linear-gradient(45deg, #FC466B 0%, #3F5EFB 100%);;
+  background: linear-gradient(45deg, #FFBE3D 0%, #F06543 100%);
 }
 
 h1{
@@ -69,7 +69,7 @@ img{
 .login__img{
   justify-self: center;
   background-color:  var(--first-color-lighten);
-  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 77%);
+  box-shadow: 0 8px 32px 0 rgba(255, 227, 67, 0.77);
 }
 
 .login__img img{
@@ -91,7 +91,7 @@ img{
   padding: 2rem 1rem;
   border-radius: 1rem;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(35,0,77,.2);
+  box-shadow: 0 8px 20px rgba(194, 188, 5, 0.2);
   animation-duration: .4s;
   animation-name: animate-login;
 }
